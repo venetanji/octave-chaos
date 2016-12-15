@@ -1,0 +1,1 @@
+function x = logistic_map (r, x0, n)  x=zeros(1,n+1);  x(1)=x0;  for k=1:n    x(k+1)=r*x(k)*(1-x(k));  endendfunction

@@ -1,0 +1,1 @@
+n = 100;r0 = 3.5;r1 = 4;t = 10;rs = [];xe = [];ye = [];for r=r0:0.00005:r1  lmaps = [];  for x0=0.4:0.1:0.9    lmaps = [lmaps, logistic_map(r, x0, n)(n-t:n)];  end  xe = [xe; lmaps];  rs = [rs, r];end    plot(rs, xe, 'linestyle', 'none', 'marker', ".", 'markersize', 1);  axis([r0 r1]);  sleep(0.001);  
